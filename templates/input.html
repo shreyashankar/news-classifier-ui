@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Python Flask App</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/signup.css" rel="stylesheet">
+    
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">News Classifier</h3>
+      </div>
+ 
+      <div class="jumbotron">
+        <h1>News Classifier</h1>
+        <form action = "submitarticle" method = "Post" class="form-signin" id="usrform">
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+         
+      </form>
+      <textarea name="article" form="usrform" id="article" class="form-control" placeholder="Enter article text here..." required autofocus></textarea>
+      <input type="submit" form="usrform">
+      </div>
+ 
+       
+ 
+      <footer class="footer">
+        <p>&copy; Andy Chen, Nick Hirning, Shreya Shankar 2017</p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>
